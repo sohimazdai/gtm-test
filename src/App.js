@@ -1,5 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
-import logo from './logo.svg';
+import { useCallback, useState } from 'react';
 import './App.css';
 
 function App() {
@@ -13,7 +12,7 @@ function App() {
     } catch (e) {
       console.error(e);
     }
-  });
+  }, [setDog]);
 
   return (
     <div className="App">
@@ -28,7 +27,7 @@ function App() {
       <p>
         <button onClick={handleFetchDogClick}>fetch a dog</button>
       </p>
-      {dog && <img src={dog} />}
+      {dog && <img src={dog} alt="fetched dog" />}
     </div>
   );
 }
