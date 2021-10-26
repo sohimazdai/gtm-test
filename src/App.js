@@ -1,4 +1,5 @@
 import { useCallback, useState } from 'react';
+
 import './App.css';
 
 function App() {
@@ -24,10 +25,10 @@ function App() {
       >
         Learn React
       </a>
-      <p>
+      <p dc-gtm-team="novelty">
         <button onClick={handleFetchDogClick}>fetch a dog</button>
       </p>
-      {dog && <img src={dog} alt="fetched dog" />}
+      {dog && <img className="img_dog" src={dog} alt="fetched dog" />}
     </div>
   );
 }

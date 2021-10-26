@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.img_dog {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 5px;
+  background-color: rgba(100, 100, 100, 0.2);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+
+.img_dog:hover {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.img_dog:active {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
